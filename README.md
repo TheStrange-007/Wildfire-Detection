@@ -1,4 +1,4 @@
-# Fire Detection System 🔥
+# Wildfire Detection System 🔥
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue.svg?logo=python)](https://www.python.org/downloads/release/python-311/)
 [![Flask](https://img.shields.io/badge/Flask-3.0.3-lightgrey.svg?logo=flask)](https://flask.palletsprojects.com/en/3.0.x/)
@@ -34,7 +34,7 @@ Wildfires pose a significant environmental and economic threat worldwide. Their 
 - **Economic Impact**: Wildfires cause an estimated $5 billion in damage annually in the U.S.【[Insurance Information Institute](https://www.iii.org/fact-statistic/facts-statistics-wildfires)】.
 - **Climate Change**: Rising global temperatures and drier conditions are significantly increasing the risk and severity of wildfires【[NASA](https://climate.nasa.gov/news/2878/the-link-between-climate-change-and-wildfires/)】.
 
-These alarming statistics underscore the urgent need for efficient wildfire detection and monitoring systems. Our **Fire Detection System** aims to address this need by leveraging cutting-edge technology to provide early detection and alerts, potentially saving lives and reducing damage.
+These alarming statistics underscore the urgent need for efficient wildfire detection and monitoring systems. Our **Wildfire Detection System** aims to address this need by leveraging cutting-edge technology to provide early detection and alerts, potentially saving lives and reducing damage.
 
 ## Project Overview
 
@@ -48,7 +48,7 @@ Our models include:
 ## Features 🌟
 
 - **Satellite Detection**: Detect wildfires using high-resolution satellite imagery.
-- **Camera Detection**: Identify fire outbreaks through analysis of images from cameras or drones.
+- **Camera Detection**: Identify wildfire outbreaks through analysis of images from cameras or drones.
 - **Weather Prediction**: Predict wildfire risks based on current and forecasted weather conditions.
 - **Alert System**: Receive hourly email alerts about wildfire risks in specified locations.
 
@@ -99,7 +99,7 @@ Once the application is running, navigate to the homepage to explore the feature
 
 - **Home**: Overview and introduction to the system.
 - **Camera Detection**: Upload images for wildfire detection.
-- **Satellite Detection**: Analyze satellite data for fire hotspots.
+- **Satellite Detection**: Analyze satellite data for wildfire hotspots.
 - **Alert Service**: Subscribe for wildfire alerts for specific geographic areas.
 
 ## File Structure 📁
@@ -151,7 +151,7 @@ For the full list of dependencies, see the [requirements.txt](requirements.txt) 
 
 ## Improvements ✨
 
-Future enhancements could further improve the effectiveness of the Fire Detection System:
+Future enhancements could further improve the effectiveness of the Wildfire Detection System:
 
 - **Diverse Datasets**: Integrating datasets from various regions would improve the system’s global applicability.
 - **Data Quantity and Quality**: Expanding the amount and quality of training data can enhance model accuracy.
