@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center my-4">
+    <h1 class="text-3xl font-bold mb-4">Satellite Detection Page</h1>
+
+    <!-- Search bar for location -->
+    <div class="flex justify-center mb-4 relative">
+        <div class="relative w-96">
+            <input type="text" id="search" class="p-2 border rounded-l w-full" placeholder="Search location"
+                autocomplete="off">
+            <div id="suggestions" class="absolute left-0 mt-1 w-full"></div>
+        </div>
+        <button id="searchBtn" class="p-2 bg-blue-500 text-white rounded-r">Search</button>
+    </div>
+
+    <!-- Map container for displaying the map -->
+    <div id="map" class="w-full max-w-lg h-96 mx-auto mb-4 border-2 border-blue-500 rounded"></div>
+
+    <!-- Button for initiating wildfire prediction -->
+    <button id="predictBtn" class="p-2 bg-blue-500 text-white rounded">IS THERE A WILDFIRE?</button>
+
+    <!-- Satellite Prediction Section -->
+    <div id="satellitePrediction" class="mt-8 mb-8">
+        <div class="text-2xl font-bold mb-4">Satellite Prediction</div>
+
+        <!-- Container for displaying the result of satellite prediction -->
+        <div id="satellitePredictionResult" class="text-xl font-medium text-center">SATELLITE PREDICTION WILL BE SHOWN
+            HERE</div>
+
+        <!-- Confidence bar for satellite prediction -->
+        <div class="mt-4 flex items-center justify-center mb-8">
+            <div class="w-96 bg-gray-300 h-8 rounded-lg relative">
+                <div id="satelliteConfidenceBar" class="h-full rounded-lg bg-green-500"></div>
+                <div id="satelliteConfidenceText"
+                    class="absolute inset-0 flex items-center justify-center text-white font-bold"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Weather Prediction Section -->
+    <div id="weatherPrediction" class="mt-8 mb-8">
+        <div class="text-2xl font-bold mb-4">Weather Prediction</div>
+
+        <!-- Container for displaying the result of weather prediction -->
+        <div id="weatherPredictionResult" class="text-xl font-medium text-center">WEATHER PREDICTION WILL BE SHOWN HERE
+        </div>
+
+        <!-- Confidence bar for weather prediction -->
+        <div class="mt-4 flex items-center justify-center mb-8">
+            <div class="w-96 bg-gray-300 h-8 rounded-lg relative">
+                <div id="weatherConfidenceBar" class="h-full rounded-lg bg-green-500"></div>
+                <div id="weatherConfidenceText"
+                    class="absolute inset-0 flex items-center justify-center text-white font-bold"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Combined Prediction Section -->
+    <div id="combinedPrediction" class="mt-8 mb-8">
+        <div class="text-2xl font-bold mb-4">Combined Prediction</div>
+
+        <!-- Container for displaying the result of combined prediction -->
+        <div id="combinedPredictionResult" class="text-xl font-medium text-center">COMBINED PREDICTION WILL BE SHOWN
+            HERE</div>
+
+        <!-- Confidence bar for combined prediction -->
+        <div class="mt-4 flex items-center justify-center mb-8">
+            <div class="w-96 bg-gray-300 h-8 rounded-lg relative">
+                <div id="combinedConfidenceBar" class="h-full rounded-lg bg-green-500"></div>
+                <div id="combinedConfidenceText"
+                    class="absolute inset-0 flex items-center justify-center text-white font-bold"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-8 text-center text-sm text-gray-600">
+        <em>Note: These predictions may not be entirely accurate. They indicate the likelihood of a wildfire occurring
+            and are not certain.</em>
+    </div>
+</div>
+
+<!-- Scripts and Styles -->
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
+<!-- Defining MapBox access token -->
+<script>
+    mapboxgl.accessToken = "{{ MAPBOX_TOKEN }}";
+</script>
+
+<style>
+    /* Styling for search suggestions */
+    #suggestions {
+        background: white;
+        border: 1px solid #ccc;
+        border-top: none;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 1000;
+    }
+
+    /* Styling for individual suggestion items */
+    .suggestion-item {
+        padding: 10px;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    /* Styling when hovering over suggestion items */
+    .suggestion-item:hover {
+        background-color: #f0f0f0;
+    }
+</style>
+{% endblock %}
