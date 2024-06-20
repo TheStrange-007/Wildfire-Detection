@@ -1,10 +1,14 @@
 # Wildfire Detection System 🔥
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg?logo=python)](https://www.python.org/downloads/release/python-311/)
+<div align="center">
+  
+[![Python](https://img.shields.io/badge/Python-3.10.13-blue.svg?logo=python)](https://www.python.org/downloads/release/python-31013/)
 [![Flask](https://img.shields.io/badge/Flask-3.0.3-lightgrey.svg?logo=flask)](https://flask.palletsprojects.com/en/3.0.x/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16.1-orange.svg?logo=tensorflow)](https://www.tensorflow.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)](https://github.com/username/repo)
+
+</div>
 
 ![Wildfire](https://medforest.net/wp-content/uploads/2019/03/forest-fire-2268725_1280.jpg)
 
@@ -13,13 +17,14 @@
 1. [Background on Wildfires](#background-on-wildfires)
 2. [Project Overview](#project-overview)
 3. [Features](#features)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [File Structure](#file-structure)
-7. [Requirements](#requirements)
-8. [Improvements](#improvements)
-9. [Contributing](#contributing)
-10. [License](#license)
+4. [Screenshot](#screenshot)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [File Structure](#file-structure)
+8. [Requirements](#requirements)
+9. [Improvements](#improvements)
+10. [Contributing](#contributing)
+11. [License](#license)
 
 ---
 
@@ -51,6 +56,12 @@ Our models include:
 - **Camera Detection**: Identify wildfire outbreaks through analysis of images from cameras or drones.
 - **Weather Prediction**: Predict wildfire risks based on current and forecasted weather conditions.
 - **Alert System**: Receive hourly email alerts about wildfire risks in specified locations.
+
+## Screenshot 📸
+
+Here's a glimpse of the Wildfire Detection System interface:
+
+![Screenshot](src/static/images/Screenshot.png)
 
 ## Installation 🚀
 
@@ -129,6 +140,8 @@ Once the application is running, navigate to the homepage to explore the feature
 │   │   │   ├── alert_map.js
 │   │   │   ├── camera.js
 │   │   │   └── map.js
+│   │   ├── images
+│   │   │   └── Screenshot.png
 │   └── templates
 │       ├── alert.html
 │       ├── base.html
@@ -139,7 +152,7 @@ Once the application is running, navigate to the homepage to explore the feature
 
 ## Requirements 📦
 
-- **Python 3.11**
+- **Python 3.10.13**
 - **Flask 3.0.3**
 - **TensorFlow 2.16.1**
 - **Pandas 2.2.2**
