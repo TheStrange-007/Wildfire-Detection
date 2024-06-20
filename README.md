@@ -1,4 +1,4 @@
-# Wildfire Detection System 🔥
+<h1 align="center">Wildfire Detection System 🔥</h1>
 
 <div align="center">
   
