@@ -12,19 +12,19 @@
 
 ![Wildfire](https://medforest.net/wp-content/uploads/2019/03/forest-fire-2268725_1280.jpg)
 
-## Table of Contents
+## Table of Contents 📚
 
-1. [Background on Wildfires](#background-on-wildfires)
-2. [Project Overview](#project-overview)
-3. [Features](#features)
-4. [Screenshot](#screenshot)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [File Structure](#file-structure)
-8. [Requirements](#requirements)
-9. [Improvements](#improvements)
-10. [Contributing](#contributing)
-11. [License](#license)
+1. [Background on Wildfires 🌍](#background-on-wildfires-)
+2. [Project Overview 🚀](#project-overview-)
+3. [Features 🌟](#features-)
+4. [Screenshot 📸](#screenshot-)
+5. [Installation 🛠️](#installation-%EF%B8%8F)
+6. [Usage 💻](#usage-)
+7. [File Structure 📁](#file-structure-)
+8. [Requirements 📦](#requirements-)
+9. [Improvements ✨](#improvements-)
+10. [Contributing 🤝](#contributing-)
+11. [License 📜](#license-)
 
 ---
 
@@ -41,7 +41,7 @@ Wildfires pose a significant environmental and economic threat worldwide. Their 
 
 These alarming statistics underscore the urgent need for efficient wildfire detection and monitoring systems. Our **Wildfire Detection System** aims to address this need by leveraging cutting-edge technology to provide early detection and alerts, potentially saving lives and reducing damage.
 
-## Project Overview
+## Project Overview 🚀
 
 This project presents an innovative solution combining satellite imagery, camera feeds, and weather data to predict the risk of wildfires. Using advanced deep learning techniques, our system performs accurate predictions and provides timely alerts through a user-friendly Flask application. 
 
@@ -63,7 +63,7 @@ Here's a glimpse of the Wildfire Detection System interface:
 
 ![Screenshot](src/static/images/Screenshot.png)
 
-## Installation 🚀
+## Installation 🛠️
 
 Follow these steps to set up the project locally:
 
@@ -115,39 +115,39 @@ Once the application is running, navigate to the homepage to explore the feature
 
 ## File Structure 📁
 
-```
+```bash
 .
-├── LICENSE
-├── README.md
-├── alerts.db
-├── requirements.txt
-├── analysis
-│   ├── meteorological-detection-classification.ipynb
-│   ├── wildfire-camera-detection.ipynb
-│   ├── wildfire-satellite-detection.ipynb
-│   ├── meteorological-detection-classification.keras
-│   ├── std_scaler_weather.pkl
-│   ├── wildfire_camera_detection_model.keras
-│   └── wildfire_satellite_detection_model.keras
-├── src
-│   ├── app.py
-│   ├── camera_functions.py
-│   ├── email_alert.py
-│   ├── meteorological_functions.py
-│   ├── satellite_functions.py
-│   ├── static
-│   │   ├── js
-│   │   │   ├── alert_map.js
-│   │   │   ├── camera.js
-│   │   │   └── map.js
-│   │   ├── images
-│   │   │   └── Screenshot.png
-│   └── templates
-│       ├── alert.html
-│       ├── base.html
-│       ├── detect_camera.html
-│       ├── detect_satellite.html
-│       └── home.html
+├── LICENSE  # Project license
+├── README.md  # You're here!
+├── alerts.db  # Database file for alerts
+├── requirements.txt  # List of dependencies
+├── analysis  # Analysis and model files
+│   ├── meteorological-detection-classification.ipynb  # Notebook for weather-based detection
+│   ├── wildfire-camera-detection.ipynb  # Notebook for camera image detection
+│   ├── wildfire-satellite-detection.ipynb  # Notebook for satellite image detection
+│   ├── meteorological-detection-classification.keras  # Saved weather detection model
+│   ├── std_scaler_weather.pkl  # Scaler for weather data
+│   ├── wildfire_camera_detection_model.keras  # Saved camera detection model
+│   └── wildfire_satellite_detection_model.keras  # Saved satellite detection model
+├── src  # Source code directory
+│   ├── app.py  # Main application file
+│   ├── camera_functions.py  # Functions for camera image processing
+│   ├── email_alert.py  # Functions for sending email alerts
+│   ├── meteorological_functions.py  # Functions for weather data processing
+│   ├── satellite_functions.py  # Functions for satellite image processing
+│   ├── static  # Static files (JS, images)
+│   │   ├── js  # JavaScript files
+│   │   │   ├── alert_map.js  # JS for alert map
+│   │   │   ├── camera.js  # JS for camera detection page
+│   │   │   └── map.js  # JS for satellite detection map
+│   │   ├── images  # Image files
+│   │   │   └── Screenshot.png  # Screenshot of the application
+│   └── templates  # HTML templates
+│       ├── alert.html  # Template for alert page
+│       ├── base.html  # Base template
+│       ├── detect_camera.html  # Template for camera detection page
+│       ├── detect_satellite.html  # Template for satellite detection page
+│       └── home.html  # Template for homepage
 ```
 
 ## Requirements 📦
